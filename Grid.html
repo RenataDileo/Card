@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+    <style>
+        header{
+            background-color: crimson;
+             grid-area: barracima;     
+         }
+        main{
+            background-color: orange;
+            grid-area: main;
+        }
+        nav{
+            grid-area: nav;
+            background-color: teal;
+            
+        }
+        footer{
+            background-color: black;
+            color: #fff;
+            grid-area: footer;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 80px 1fr 200px;
+            height: 100%;
+            grid-template-areas: "barracima barracima" "nav main" "footer footer";
+
+
+        }
+        body{
+            height: 100vh;
+        }
+
+    </style>
+</head>
+<body>
+<section class="container--grid">
+
+   <header>
+       Eu sou o Header/Cabeçalho
+   </header> 
+
+   <main>
+       Eu sou o Main/Principal
+   </main>
+
+   <nav>
+       Eu sou a Nav/Navegação
+   </nav>
+   <footer>
+        Eu sou o Pé
+   </footer>
+</section>
+</body>
+</html>
